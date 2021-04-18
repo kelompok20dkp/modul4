@@ -56,5 +56,30 @@ int main() {
 		cout << "Masukkan input: ";
 		cin >> angka;
 		cout << endl;
+		switch (angka) {
+		case 1:
+			cout << "Masukkan nilai Rupiah yang ingin dikonversi: IDR ";
+			cin >> jumlah;
+			Obj.usd(jumlah);
+			break;
+		case 2:
+			cout << "Masukkan nilai Rupiah yang ingin dikonversi: IDR ";
+			cin >> jumlah;
+			Obj.euro(jumlah);
+			break;
+		case 3:
+			cout << "Masukkan nilai Rupiah yang ingin dikonversi: IDR ";
+			cin >> jumlah;
+			Obj.yen(jumlah);
+			break;
+		default:
+			cout << "Input yang Anda masukkan salah.";
+		}
+		cout << endl << endl;
+		cout << "Apakah Anda ingin mengulang program?" << endl;
+		cout << "Jawab (y/n): ";
+		cin >> pilihan;
+		cout << endl;
 	}
+	cout << "Terima kasih";
 }
