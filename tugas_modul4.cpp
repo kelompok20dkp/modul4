@@ -7,11 +7,33 @@ void garis() {
 	}
 }
 
+class Konversi {
+public:
+	void usd(float jumlah) {
+		float konversi;
+		konversi = jumlah / 14526.9;
+		cout << "Jumlah nilai uang yang Anda masukkan dalam Dolar Amerika adalah USD " << konversi;
+	}
+
+	void euro(float jumlah) {
+		float konversi;
+		konversi = jumlah / 17406.04;
+		cout << "Jumlah nilai uang yang Anda masukkan dalam Euro adalah EUR " << konversi;
+	}
+
+	void yen(float jumlah) {
+		float konversi;
+		konversi = jumlah / 133.54;
+		cout << "Jumlah nilai uang yang Anda masukkan dalam Yen adalah JPY " << konversi;
+	}
+};
+
 int main() {
 	int angka;
 	float jumlah;
 	char pilihan;
 	pilihan = 'y';
+	Konversi Obj;
 	garis();
 	cout << endl;
 	cout << "Kelompok 20" << endl;
@@ -33,5 +55,6 @@ int main() {
 		cout << "3. Rupiah => Yen" << endl;
 		cout << "Masukkan input: ";
 		cin >> angka;
+		cout << endl;
 	}
 }
